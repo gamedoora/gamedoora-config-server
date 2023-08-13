@@ -1,0 +1,10 @@
+[Unit]
+Description=gamedoora-config-server
+After=syslog.target
+
+[Service]
+User=gamedoora
+ExecStart=/opt/gamedoora/gamedoora-config-server.jar
+SuccessExitStatus=143
+[Install]
+WantedBy=multi-user.target

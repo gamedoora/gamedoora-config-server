@@ -42,18 +42,22 @@
 	</dependencyManagement>
 
 	<build>
+		<finalName>gamedoora-config-server</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<executable>true</executable>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
 	<distributionManagement>
 		<repository>
-			<id>codeartifact</id>
-			<name>codeartifact</name>
-			<url>https://gamedoora-727903310356.d.codeartifact.us-east-1.amazonaws.com/maven/Gamedoora/</url>
+			<id>github</id>
+			<name>GitHub gamedoora Apache Maven Packages for config server</name>
+			<url>https://maven.pkg.github.com/gamedoora/gamedoora-config-server</url>
 		</repository>
 	</distributionManagement>
 </project>
